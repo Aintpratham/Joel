@@ -17,6 +17,6 @@ joel-birthday/
     │   └── photo5.jpg
     │
     └── music/
-        └── birthday-song.mp3  ← Add any soft mp3 here
+        └── song.mp3
 
 Made with 🤍 — from Canada to Australia.
