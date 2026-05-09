@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Joel 🤍</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Playfair Display for headings, Lato for body -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== -->
+  <!--   FLOATING PARTICLES  -->
+  <!-- ===================== -->
+  <div class="particles" id="particles"></div>
+
+  <!-- ===================== -->
+  <!--    LANDING SECTION    -->
+  <!-- ===================== -->
+  <section class="landing" id="landing">
+    <div class="landing-inner">
+      <p class="landing-pretext">for someone who makes the world warmer just by being in it</p>
+      <h1 class="landing-title">Happy Birthday,<br /><span class="name-highlight">Joel</span> 🤍</h1>
+      <p class="landing-sub">From one corner of the world to another — this one's for you.</p>
+      <button class="open-btn" id="openBtn" onclick="enterSite()">Open Your Letter ↓</button>
+    </div>
+
+    <!-- Decorative blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </section>
+
+  <!-- ===================== -->
+  <!--    MAIN SITE WRAPPER  -->
+  <!-- ===================== -->
+  <main class="main-content" id="mainContent">
+
+    <!-- ===================== -->
+    <!--    MESSAGE SECTION    -->
+    <!-- ===================== -->
+    <section class="section message-section" id="message">
+      <div class="section-inner">
+        <span class="section-tag">// a letter to you</span>
+        <h2 class="section-title">For my favourite person across time zones,</h2>
+
+        <div class="message-body">
+          <!-- ✏️ Edit these paragraphs freely -->
+          <p>
+            You know, life is strange in the sweetest way. We were once in the same school hallways back in India, probably never knowing that years later, from completely different countries, we would become this close. And even with all that distance, you became one of the people who feels closest to my heart.
+          </p>
+          
+          <p>
+            What I adore the most about you is how naturally cute and warm you are. It’s not something you try to do — it’s just you. The way you talk, the way you care, the way you make people feel comfortable, and even your little dramatic moments make you so genuinely special. You have this soft energy that stays with people, and I hope you know how rare that is.
+          </p>
+          
+          <p>
+            I’m honestly proud of the person you are becoming and everything you’re doing for yourself. I know life abroad is not always easy, but you still keep going, still smile, still care, and still make space for people you love. On your birthday, I just want you to feel seen, appreciated, and loved — from this little corner of Canada too. You deserve the happiest year ahead, Joel. 🤍
+          </p>
+          
+          <p>
+            Always rooting for you, always here for you — love you.
+          </p>
+        
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== -->
+    <!--   POLAROID GALLERY   -->
+    <!-- ===================== -->
+    <section class="section gallery-section" id="gallery">
+      <div class="section-inner gallery-inner">
+        <span class="section-tag">// just you, being you</span>
+        <h2 class="section-title">A Few Frames<br/>of My Favourite Person</h2>
+        <p class="section-subtitle">because some photos deserve to be seen 🤍</p>
+
+        <div class="polaroid-wall">
+
+          <!-- ✏️ HOW TO USE:
+               1. Put your photos in /assets/images/
+               2. Replace "assets/images/photo1.jpg" etc. with your actual filenames
+               3. Change the caption text inside <p class="polaroid-caption">
+               4. The --rot value tilts each card — feel free to tweak the angle
+          -->
+
+          <div class="polaroid" style="--rot: -3.5deg; --delay: 0s">
+            <div class="polaroid-img-wrap">
+              <img src="assets/images/photo1.jpg" alt="Joel" onerror="this.closest('.polaroid-img-wrap').classList.add('no-img')" />
+              <div class="polaroid-no-img-icon">🌸</div>
+            </div>
+            <!-- ✏️ Caption ideas: "this smile 🤍", "her actual vibe", "proof she's adorable" -->
+            <p class="polaroid-caption">this smile 🤍</p>
+          </div>
+
+          <div class="polaroid" style="--rot: 2deg; --delay: 0.12s">
+            <div class="polaroid-img-wrap">
+              <img src="assets/images/photo2.jpg" alt="Joel" onerror="this.closest('.polaroid-img-wrap').classList.add('no-img')" />
+              <div class="polaroid-no-img-icon">✨</div>
+            </div>
+            <!-- ✏️ Caption ideas: "her actual vibe", "sunshine in a person", "ok but why so cute" -->
+            <p class="polaroid-caption">her actual vibe ✨</p>
+          </div>
+
+          <div class="polaroid" style="--rot: -1.5deg; --delay: 0.24s">
+            <div class="polaroid-img-wrap">
+              <img src="assets/images/photo3.jpg" alt="Joel" onerror="this.closest('.polaroid-img-wrap').classList.add('no-img')" />
+              <div class="polaroid-no-img-icon">🌷</div>
+            </div>
+            <!-- ✏️ Caption ideas: "ok but why so cute", "i can't", "living her best life" -->
+            <p class="polaroid-caption">ok but why so cute</p>
+          </div>
+
+          <div class="polaroid" style="--rot: 3deg; --delay: 0.36s">
+            <div class="polaroid-img-wrap">
+              <img src="assets/images/photo4.jpg" alt="Joel" onerror="this.closest('.polaroid-img-wrap').classList.add('no-img')" />
+              <div class="polaroid-no-img-icon">💛</div>
+            </div>
+            <!-- ✏️ Caption ideas: "sunshine 🌼", "the look™", "she doesn't miss" -->
+            <p class="polaroid-caption">sunshine 🌼</p>
+          </div>
+
+          <div class="polaroid" style="--rot: -2deg; --delay: 0.48s">
+            <div class="polaroid-img-wrap">
+              <img src="assets/images/photo5.jpg" alt="Joel" onerror="this.closest('.polaroid-img-wrap').classList.add('no-img')" />
+              <div class="polaroid-no-img-icon">🫶</div>
+            </div>
+            <!-- ✏️ Caption ideas: "just Joel being Joel", "my person 🤍", "I can't even" -->
+            <p class="polaroid-caption">just Joel 🤍</p>
+          </div>
+
+        </div><!-- end .polaroid-wall -->
+      </div>
+    </section>
+
+    <!-- ===================== -->
+    <!--   WHY YOU'RE SPECIAL  -->
+    <!-- ===================== -->
+    <section class="section special-section" id="special">
+      <div class="section-inner">
+        <span class="section-tag">// a small but honest list</span>
+        <h2 class="section-title">Why You're<br />So Special</h2>
+
+        <div class="cards-grid">
+
+          <!-- ✏️ Edit these cards — add, remove, or change as you like -->
+          <div class="card" style="--delay: 0s">
+            <div class="card-icon">🌸</div>
+            <h3>Your Smile</h3>
+            <p>Honestly unfair how much a single smile from you can fix a bad mood.</p>
+          </div>
+
+          <div class="card" style="--delay: 0.1s">
+            <div class="card-icon">✨</div>
+            <h3>Your Energy</h3>
+            <p> You somehow make everything feel lighter without even trying.</p>
+          </div>
+
+          <div class="card" style="--delay: 0.2s">
+            <div class="card-icon">💛</div>
+            <h3>Not Very Fair</h3>
+            <p>
+              You really didn’t have to be this adorable, but here we are.
+            </p>
+          </div>
+
+          <div class="card" style="--delay: 0.3s">
+            <div class="card-icon">🌍</div>
+            <h3>Your Strength</h3>
+            <p>New country, new life — and you’re still handling it better than most people would.</p>
+          </div>
+
+          <div class="card" style="--delay: 0.4s">
+            <div class="card-icon">🐻</div>
+            <h3>Your Adorableness</h3>
+            <p>Genuinely, insufferably cute.  At this point, it’s just your personality… and yeah, it’s a problem.</p>
+          </div>
+
+          <div class="card" style="--delay: 0.5s">
+            <div class="card-icon">🫶</div>
+            <h3>Just Being You</h3>
+            <p>No filter, no performance — just real, warm, wonderful Joel.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!--   HIDDEN MESSAGE REVEAL   -->
+    <!-- ========================= -->
+    <section class="section hidden-section" id="hiddenMsg">
+      <div class="section-inner center">
+        <span class="section-tag">// press to reveal</span>
+        <h2 class="section-title">A Little Secret</h2>
+        <p class="section-subtitle">I wrote something just for you.</p>
+        <button class="reveal-btn" id="revealBtn" onclick="revealMessage()">Tap to Reveal 🤍</button>
+        <div class="hidden-message" id="hiddenMessage">
+          <!-- ✏️ This is the hidden message Joel sees when she taps the button -->
+          <p>
+            I don't say this enough, but — I'm genuinely so glad you exist. Not in a big dramatic way — just in the small, everyday way. The way a random meme makes me think "Joel would lose it at this." The way I'll hear a song and just know you'd add it to your playlist. The way some days I just want to tell someone something dumb and you're the first person I think of.
+          </p>
+          
+          <p>
+            You're one of those rare people who makes everyone around them feel a little more seen. And I think sometimes you don't even realize you're doing it — that's the best part about you.
+          </p>
+        
+          <p>
+            So yeah — I just hope this year treats you really well. You deserve to feel happy, settled, and proud of where you are. And no matter how busy life gets, I’m always here.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== -->
+    <!--    FINAL MESSAGE      -->
+    <!-- ===================== -->
+    <section class="section final-section" id="final">
+      <div class="section-inner center">
+        <div class="blob blob-final-1"></div>
+        <div class="blob blob-final-2"></div>
+
+        <span class="section-tag">// until we meet again</span>
+
+        <div class="final-quote">
+          <p>
+            I hope this year brings you the kind of happiness that feels calm and real — not just big moments, but the small ones too. The random laughs, the peaceful days, the “I’m actually okay” kind of feeling.
+          </p>
+          <p>
+            One day, I really hope we get to be in the same city again. Maybe explore a new place together, maybe just sit somewhere and talk like no time has passed. That day will come.
+          </p>
+          <p>
+            Until then — from Canada to Australia, with so much warmth —
+          </p>
+        </div>
+
+        <div class="final-sign">
+        
+          <p class="love-you">Love you, Joel. 🤍</p>
+          <p class="sign-name">— still the same person you somehow ended up becoming close to</p>
+        </div>
+
+        <div class="balloons-row" aria-hidden="true">
+          <span>🎈</span><span>🎂</span><span>🎉</span><span>🎈</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== -->
+  <!--   BACKGROUND MUSIC    -->
+  <!-- ===================== -->
+  <!-- ✏️ Put your .mp3 file in /assets/music/ folder and rename it below -->
+  <audio id="bgMusic" loop>
+    <source src="assets/music/birthday-song.mp3" type="audio/mpeg" />
+  </audio>
+
+  <button class="music-btn" id="musicBtn" onclick="toggleMusic()" title="Play / Pause music">
+    🎵
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
